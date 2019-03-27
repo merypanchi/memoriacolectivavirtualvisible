@@ -2,6 +2,6 @@ body {
   font-family: Verdana;
 }
 h1 {
-  align: "center";
-  padding-top: 20px;
+  text-align: "center";
+  padding-top: 100px;
 }
