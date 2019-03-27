@@ -1,16 +1,23 @@
 <html>
-<script src="http://static.filestackapi.com/filestack-js/1.x.x/filestack.min.js"></script>
-<script>
-  const client = filestack.init('A6aTz13FQ0q3UfQKp0phsz');
-  const options = {
-	"storeTo": {
-    "container": "devportal-customers-assets",
-    "path": "user-uploads/",
-    "region": "us-east-1"
-  },
-    onUploadDone: (res) => console.log(res),
-  };
-  client.picker(options).open();
-</script>
-
+	<head>
+		<title> Memoria Colectiva Virtual Visible </title>
+		<script src="http://static.filestackapi.com/filestack-js/1.x.x/filestack.min.js"></script>
+	</head>
+	
+	<body>
+		<h1> Comparte la primera imagen que veas en tu ordenador </h1>
+		<script>
+		  const client = filestack.init('A6aTz13FQ0q3UfQKp0phsz');
+		  const options = {
+			"storeTo": {
+		    "container": "devportal-customers-assets",
+		    "path": "user-uploads/",
+		    "region": "us-east-1"
+		  },
+		    onUploadDone: (res) => console.log(res),
+		  };
+		  client.picker(options).open();
+		</script>
+	</body>
+	
 </html>
